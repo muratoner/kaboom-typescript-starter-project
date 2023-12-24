@@ -1,7 +1,6 @@
 import { Comp, GameObj } from "kaboom";
 import k from "./kaboomCtx";
 
-
 const titleComps : Array<Comp> = [
   k.text("Hello World!", {font: "sinko"}),
   k.pos(200,100),
@@ -13,7 +12,6 @@ function enableFullscreen() {
     fullscreen(!isFullscreen())
   });
 }
-
 
 k.scene("mainScene", async () => {
   enableFullscreen(); //fullscreen is scoped by scene. You need this if you want your players to be able to go fullscreen on this scene.
@@ -45,6 +43,5 @@ k.scene("mainScene", async () => {
   k.onKeyDown("up", () => bean.move(0, -SPEED));
   k.onKeyDown("down", () => bean.move(0, SPEED));
 });
-
 
 k.go("mainScene");
