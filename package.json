@@ -15,7 +15,7 @@
   "author": "Nassim Saboundji",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.14.39",
+    "esbuild": "^0.25.0",
     "kaboom": "^2000.2.9"
   }
 }
